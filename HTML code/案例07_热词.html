@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display:block;
+            width: 200px;
+            height: 80px;
+            /* 体悟：text-align只会影响内容在盒子里的对齐方式，而不会影响到盒子整体在页面中的对齐效果 */
+            text-align: center;
+            line-height:80px;
+            font-size:18px;
+            text-decoration: none;
+            background-color: #f98080;
+            color:white;  
+        }
+        a:hover {
+            color:#b85555;
+            background-color: #ffadad;
+        } 
+        /* 自己扩展的内容，主要是将盒子移到页面中间来 */
+        .bigbox {
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <a href="#">爱莉希雅</a>
+        <a href="#">流萤</a>
+        <a href="#">叶瞬光</a>
+        <a href="#">希儿</a>
+        <a href="#">布洛妮娅</a>
+    </div>  
+</body>
+</html>
