@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 清除默认样式 */
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        /* 大盒子属性 */
+        .bigbox {
+            width: 360px;
+            height: 200px;
+            margin:30px auto;
+        }
+        /* 标题栏属性 */
+        .box1 {
+            height: 35px;
+            border:1px solid #dbdee1;
+            border-left:none;
+
+            background-color:#eee;        
+        }
+        .box1 a {
+            margin:-1px; /* 盒子向上移1像素，使之对齐父级的边框线 */
+            display: block;
+            width: 48px;
+            height: 35px;
+            border-top:3px solid #ff8400;
+            border-right:1px solid #dbdee1;
+            
+            font-size:14px;
+            color:#333;
+            text-align: center;
+            line-height: 32px;
+            background-color: #fff;
+        }
+        .box1 a:hover {
+            color: #ff8400;
+        }
+        /* 内容属性 */
+        .box2 {
+            padding:5px;
+        }
+        .box2 li {
+            padding-left: 14px;
+
+            background-image: url(./案例10/square.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .box2 a {
+            padding-left: 18px;
+
+            font-size:12px;
+            color:#666;
+            line-height: 24px;
+            background-image: url(./案例10/img.gif);
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .box2 a:hover {
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1">
+            <a href="#">新闻</a>
+        </div>
+        <div class="box2">
+            <ul>
+                <li><a href="#">新闻1：国家统计局发布2024年一季度GDP数据</a></li>
+                <li><a href="#">新闻2：我国首艘国产大型邮轮“爱达·魔都号”正式交付</a></li>
+                <li><a href="#">新闻3：教育部公布新一轮“双一流”建设高校名单</a></li>
+                <li><a href="#">新闻4：全国多地进入汛期，水利部启动Ⅳ级应急响应</a></li>
+                <li><a href="#">新闻5：人工智能大模型应用加速落地，赋能千行百业</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
