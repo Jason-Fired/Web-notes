@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+	margin:0;					/* 清除外边距 */
+    padding:0;					/* 清除内边距 */
+    box-sizing:border-box;		/* 尺寸默认包含 border 和 padding */
+    }
+
+    li {
+    list-style:none;			/* 移除列表项符号 */
+    }
+
+    .box{
+        width: 1312px;
+        height: 530px;
+        border: 1px solid #ddd;
+        margin:50px auto;
+        border-radius: 10px;
+    }
+
+    .box ul{
+        display: flex;
+        /* 设置盒子换行 */
+        flex-wrap: wrap;
+        /* 设置主轴对齐方式 */
+        justify-content:space-between;
+        /* 设置行对齐方式 */
+        align-content:space-between;
+
+        height: 530px;
+        padding:90px 40px 90px 60px;
+    }
+
+    .box ul li{
+        display: flex;
+        width: 556px;
+        height: 144px;
+
+        /* background-color: #f59797; */
+    }
+
+    .box ul li .pic{
+        margin-right:15px;
+    }
+
+    .box .text h4{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color:#333;
+    }
+
+    .box .text p{
+        font-size: 14px;
+        color:#666;
+    }
+
+    .box .text{
+        /* 设置侧轴对齐方式，实现图右边文字垂直居中效果 */
+        align-self:center;
+    }
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="pic"><img src="./ys_wanan.png" alt="刻晴晚安"></div>
+                <div class="text">
+                    <h4>刻晴</h4>
+                    <p>五星雷元素单手剑角色，隶属于璃月港，身份为统领商业与民生事务的「玉衡星」</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="./ys_weiqubaba.png" alt="砂糖委屈"></div>
+                <div class="text">
+                    <h4>砂糖</h4>
+                    <p>四星风元素法器角色，隶属于蒙德城西风骑士团，身份为首席炼金术士阿贝多的助手</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="./ys_wojujue.png" alt="刻晴No"></div>
+                <div class="text">
+                    <h4>玉衡大人</h4>
+                    <p>私下会偷偷买帝君周边、因被误解而委屈、对旅行者逐渐敞开心扉</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic"><img src="./ys_woquanyao.png" alt="我全要"></div>
+                <div class="text">
+                    <h4>钟离</h4>
+                    <p>五星岩元素长柄武器角色，表面身份为璃月港「往生堂」的神秘客卿，真实身份则是统治璃月数千年的岩神·摩拉克斯</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
